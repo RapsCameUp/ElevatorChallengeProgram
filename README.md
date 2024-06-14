@@ -28,3 +28,6 @@ Project Structure
 * Services: Includes the main service (ElevatorService) responsible for coordinating elevator actions.
 * Utilities: Utility classes for logging and other helper functions.
 * MsTests: Contains MSTest unit tests to verify the functionality of the elevator simulation program.
+
+Automated Builds
+* GitHub workflow automated builds are included.
