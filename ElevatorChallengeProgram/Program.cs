@@ -10,8 +10,10 @@ using ElevatorChallengeProgram.Services;
 try
 {
     // Create a service provider to manage dependency injection
+    // initialize number of elevators, floors, default capacity
     var serviceProvider = new ServiceCollection()
-                  .AddSingleton<IElevatorService>(provider => new ElevatorService(3, 10, 5))
+                  .AddSingleton<IElevatorService>(provider => new ElevatorService(ElevatorConstants.DEFAULT_NUMBER_OF_ELEVATORS, 
+                  ElevatorConstants.DEFAULT_NUMBER_OF_FLOORS, ElevatorConstants.DEFAULT_ELEVATOR_CAPACITY)) // initialize number of elevators, floors, default capacity
                   .AddSingleton<IElevatorController, ElevatorController>()
                   .BuildServiceProvider();
 

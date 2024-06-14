@@ -2,6 +2,10 @@
 {
     public static class Logger
     {
+        /// <summary>
+        /// Logs a message to the console with the desired color
+        /// </summary>
+        /// <param name="message"></param>
         public static void LogToConsole(string message)
         {
             LogWithColor(message, ConsoleColor.White);
